@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/* css 초기화 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+  font-family:Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 헤더 영역 */
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(235, 3, 3);
+  text-align: center;
+  padding-top: 20px;
+  z-index: 99999;
+}
+
+.logo button {
+  position: absolute;
+  top: 0;
+  height: 70px;
+  right: 100px;
+  display: flex;
+  background-color: rgb(235, 3, 3);
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+.logo button a {
+  position: relative;
+  color: #ffffff;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 0 5px;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.logo button i {
+  right: 100px;
+  width: 30px;
+  margin: 0 5px;
+  transition: all 0.2s;
+}
+
+.logo button:hover a {
+  text-decoration: underline;
+  color: #ff8d40;
+}
+
+.logo button:hover i {
+  color: #ff8d40;
+}
+
+.logo i {
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.logo > i {
+  position: absolute;
+  right: 50px;
+}
+
+.search-wrap {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.search-wrap.on {
+  height: 120px;
+}
+
+#search {
+  position: relative;
+  left: calc(50% - 300px);
+  width: 600px;
+  height: 200px;
+  padding-top: 35px;
+}
+
+#search input {
+  width: 520px;
+  height: 45px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #fff;
+  padding-left: 15px;
+  border: 2px solid #ddd;
+}
+
+#search button {
+  position: relative;
+  top: 1px;
+  left: -4px;
+  width: 75px;
+  height: 44px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#search button:hover {
+  background-color: #ff8d40;
+}
+
+/* 네비게이션 영역 */
+
+nav {
+  position: relative;
+  top: 70px;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 20%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu > a {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.menu:hover > a {
+  color: #ff8d40;
+}
+
+.submenu {
+  position: relative;
+  top: -1px;
+  display: none;
+  width: 100%;
+  font-size: 15px;
+  height: 310px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.submenu > li {
+  height: 50px;
+}
+
+.submenu > li > a {
+  display: block;
+  color: #666;
+}
+
+.submenu > li:hover > a {
+  text-decoration: underline;
+}
+
+/* 슬라이더 영역 */
+
+.slider-wrap {
+  position: relative;
+  top: 71px;
+  width: 100%;
+  height: 37vw;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+}
+
+.slider img {
+  width: 100%;
+  height: 37vw;
+  cursor: pointer;
+}
+
+.slider-page {
+  position: relative;
+  left: calc(50% - 120px);
+  width: 240px;
+  margin-top: 80px;
+  height: 25px;
+  text-align: center;
+  display: flex;
+}
+
+.page {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.page.on {
+  background-color: red;
+}
+
+/* 컨텐츠 영역 */
+
+.contents {
+  position: relative;
+  top: -2px;
+  left: calc(50% - 650px);
+  width: 1300px;
+  height: 100%;
+  background-color: #eee;
+}
+
