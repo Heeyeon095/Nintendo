@@ -13,9 +13,13 @@ let s = 0;
 $('.search-bt').click(function(){
   if(s == 0) {
     $( '.search-wrap').addClass('on');
+    $('.search-show').hide();
+    $('.search-close').show();
     s++;
   } else if(s == 1) {
     $( '.search-wrap').removeClass('on');
+    $('.search-show').show();
+    $('.search-close').hide();
     s = 0;
   };
 });

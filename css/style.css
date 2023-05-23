@@ -163,6 +163,16 @@ header {
   background-color: #ff8d40;
 }
 
+.logo > i:last-child {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
 /* 네비게이션 영역 */
 
 nav {
@@ -268,17 +278,102 @@ nav > ul {
 }
 
 .page.on {
-  background-color: red;
+  background-color: rgb(235, 3, 3);
 }
 
 /* 컨텐츠 영역 */
 
 .contents {
   position: relative;
-  top: -2px;
-  left: calc(50% - 650px);
-  width: 1300px;
+  top: 100px;
+  left: calc(50% - 600px);
+  width: 1200px;
   height: 100%;
-  background-color: #eee;
 }
 
+/* 주요 소프트웨어 영역 */
+
+.gametitle-wrap {
+  width: 100%;
+}
+
+.gametitle-wrap > p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+.gametitle-con {
+  width: 100%;
+}
+
+.gametitle {
+  width: 280px;
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+
+.gametitle:hover .gametitle-text > p {
+  text-decoration: underline;
+}
+
+.gametitle-img {
+  width: 100%;
+  height: 160px;
+}
+
+.gametitle-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.gametitle-text {
+  width: 100%;
+  color: #333;
+}
+
+.gametitle-text-switch {
+  color: rgb(235, 3, 3);
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.gametitle-red {
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgb(235, 3, 3);
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.gametitle-text > p {
+  height: 60px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.gametitle-text-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gametitle-text-bottom > p {
+  font-size: 14px;
+  color: #666;
+}
+
+.gametitle-text-bottom > span {
+  height: 35px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgb(235, 3, 3);
+  border: 2px solid rgb(235, 3, 3);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+}
