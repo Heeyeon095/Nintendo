@@ -1,3 +1,9 @@
+// 로고
+
+$('.logo > img').click(function(){
+  location.href = 'index.html';
+});
+
 // 네비게이션
 
 $('.menu').hover(function(){
@@ -29,20 +35,16 @@ $('.search-bt').click(function(){
 let curr = 1;
 
 function slide () {
-
   i = curr % 8;
 
   curr++;
 
-  $('.slider').css({
-    left: '-' + i + '00%'
+  $(".slider").css({
+    left: "-" + i + "00%",
   });
 
-  $('.page').removeClass('on');
-  $('.page').eq(i).addClass('on');
-
-  console.log(curr);
-  
+  $(".page").removeClass("on");
+  $(".page").eq(i).addClass("on");
 }
 
 let mySlide = setInterval(slide,4000);
