@@ -101,11 +101,11 @@ header {
 
 .logo button:hover a {
   text-decoration: underline;
-  color: #ff8d40;
+  color: #fe7c0a;
 }
 
 .logo button:hover i {
-  color: #ff8d40;
+  color: #fe7c0a;
 }
 
 .logo i {
@@ -168,7 +168,7 @@ header {
 }
 
 #search button:hover {
-  background-color: #ff8d40;
+  background-color: #fe7c0a;
 }
 
 .logo > i:last-child {
@@ -215,7 +215,7 @@ nav > ul {
 }
 
 .menu:hover > a {
-  color: #ff8d40;
+  color: #fe7c0a;
 }
 
 .submenu {
@@ -270,11 +270,11 @@ nav > ul {
   position: relative;
   left: calc(50% - 120px);
   width: 240px;
-  margin-top: 80px;
+  margin-top: 100px;
   height: 25px;
   text-align: center;
   display: flex;
-}
+}16
 
 .page {
   width: 20px;
@@ -296,7 +296,6 @@ nav > ul {
   top: 100px;
   left: calc(50% - 600px);
   width: 1200px;
-  height: 100%;
 }
 
 /* 주요 소프트웨어 영역 */
@@ -322,8 +321,25 @@ nav > ul {
   cursor: pointer;
 }
 
+.gametitle-wrap > a {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  background-color: #fe7c0a;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
 .gametitle-wrap > span:hover {
   text-decoration: underline;
+}
+
+.gametitle-wrap > a:hover {
+  background-color: #e60012;
 }
 
 .gametitle-con {
@@ -411,7 +427,7 @@ nav > ul {
 /* 구입 배너 영역 */
 
 .parchase-banner {
-  position: absolute;
+  position: relative;
   height: 140px;
   width: 100vw;
   background-image: url(../images/main_banner_eshop.gif);
@@ -423,11 +439,112 @@ nav > ul {
   cursor: pointer;
 }
 
+/* 홍보 */
+
+.add {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translate(-50%);
+  height: 700px;
+  background-color: #e60012;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.add-logo {
+  width: 100px;
+}
+
+.add-img {
+  width: 1200px;
+}
+
+.add-hand {
+  position: absolute;
+  top: -300px;
+  left: calc(50% - 580px);
+}
+
+.add-switch {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 580px);
+}
+
+.add-img img {
+  width: 750px;
+}
+
+.add-text {
+  position: absolute;
+  top: 80px;
+  left: calc(50% + 180px);
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.add-text > p {
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.add-text > p > span {
+  background: url(../images/main_pic_displayOff.png);
+  background-position: center;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-size: 3.6rem;
+}
+
+.add-text > span {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.add-text > h5 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.add-text > div {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.add-text > h6 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.add-text > a {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-text > a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 /* 뉴스 영역 */
 
 .news-wrap {
   position: relative;
-  margin-top: 350px;
+  margin-top: 100px;
   width: 100%;
   color: #333;
   padding-bottom: 100px;
@@ -509,4 +626,49 @@ nav > ul {
   font-weight: 100;
   font-size: 14px;
   color: #666;
+}
+
+/* 푸터 영역 */
+
+footer {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+footer > p {
+  color: blue;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer > h5 {
+  color: #666;
+  height: 40px;
+}
+
+footer > h5 > span {
+  color: #333;
+}
+
+footer > span {
+  font-size: 14px;
+  color: #666;
+}
+
+.amibo {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.amibo img {
+  width: 520px;
 }
