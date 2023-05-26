@@ -12,6 +12,32 @@ $('.menu').hover(function(){
   $('.submenu').stop().slideUp();
 });
 
+// 미디어쿼리 애니메이션
+
+let mediaMenu = 0;
+
+$('.media-menu').click(function(){
+  if(mediaMenu == 0) {
+    $('.media-nav').stop().slideDown();
+    mediaMenu++;
+  } else {
+    $('.media-nav').stop().slideUp();
+    mediaMenu = 0;
+  }
+});
+
+$('.media-nav > li').click(function(){
+  if($(this).hasClass('on')) {
+    $(this).removeClass('on');
+    $(this).find('.media-nav-sub').stop().slideUp();
+  } else {
+    $('.media-nav > li').not(this).removeClass('on');
+    $(this).addClass('on');
+    $(this).find('.media-nav-sub').stop().slideDown();
+    $('.media-nav > li').not(this).find('.media-nav-sub').stop().slideUp();
+  };
+});
+
 // 검색창
 
 let s = 0;
