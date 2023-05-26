@@ -947,6 +947,10 @@ footer > span {
 
 @media (max-width:800px) {
 
+  .logo button a {
+    display: none;
+  }
+
   .slider-wrap {
     height: 100vw;
   }
@@ -1041,7 +1045,12 @@ footer > span {
   }
 
   footer {
-    top: -100px;
+    top: 0px;
+    margin-top: -100px;
+  }
+
+  .amibo {
+    display: none;
   }
 
 }
